@@ -1,9 +1,10 @@
+import checkAuth from './utils/checkAuth';
+import MainPage from './pages/Main';
+import LoginPage from './pages/Login';
+
 function App() {
-  return (
-    <div>
-      app
-    </div>
-  );
+  if (checkAuth()) return <MainPage/>;
+  return <LoginPage/>
 }
 
 export default App;
