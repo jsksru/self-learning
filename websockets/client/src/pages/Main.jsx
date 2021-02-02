@@ -8,7 +8,7 @@ const MainPage = () => {
   const ws = useRef(null);
 
   useEffect(() => {
-    ws.current = new WebSocket('ws://localhost:3030');
+    ws.current = new WebSocket(`ws://${window.location.hostname}:3030`);
     return () => ws.current.close();
   }, []);
 
