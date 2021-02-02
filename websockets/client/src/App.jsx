@@ -1,10 +1,10 @@
-import checkAuth from './utils/checkAuth';
+import { isAuth } from './utils/auth';
 import MainPage from './pages/Main';
 import LoginPage from './pages/Login';
 
 function App() {
-  if (checkAuth()) return <MainPage/>;
-  return <LoginPage/>
+  if (isAuth()) return <MainPage/>;
+  return <LoginPage/>;
 }
 
 export default App;
