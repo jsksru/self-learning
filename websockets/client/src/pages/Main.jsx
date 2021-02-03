@@ -30,7 +30,7 @@ const MainPage = () => {
 
   return (
     <div className="center-page">
-      <div className="chat" style={{width: '600px'}}>
+      <div className="chat">
         <Header/>
         <Messages items={messagesList}/>
         <Controls sendHandler={sendHendler}/>

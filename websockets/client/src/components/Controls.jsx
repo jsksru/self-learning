@@ -12,8 +12,14 @@ const Controls = ({ sendHandler }) => {
   return (
     <form onSubmit={submitHandler}>
       <div className="controls" style={{display: 'flex'}}>
-        <input type="text" autoComplete="off" value={messageText} onInput={(e) => setMessageText(e.target.value)} style={{flexGrow: 1}}/>
-        <button type="submit" disabled={messageText.trim().length === 0}>SEND</button>
+        <input className="text-input"
+               type="text"
+               autoComplete="off"
+               value={messageText}
+               onInput={(e) => setMessageText(e.target.value)}
+               placeholder="Your text here..."
+        />
+        <button type="submit" className="button" disabled={messageText.trim().length === 0}>SEND</button>
       </div>
     </form>
   );

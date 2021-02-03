@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header" style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
       <h1>Chat</h1>
       <div>Users online: 1</div>
-      <button onClick={exitHandler}>Exit</button>
+      <button onClick={exitHandler} className="button">Exit</button>
     </div>
   );
 };

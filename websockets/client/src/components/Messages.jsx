@@ -30,8 +30,10 @@ const messageType = (message, index) => {
 
 const Messages = ({ items }) => {
   return (
-    <div className="messages" style={{height: '400px', padding: '10px', border: '1px solid black'}}>
-      {items.map(messageType)}
+    <div className="messages">
+      <div className="messages-list">
+        {items.map(messageType)}
+      </div>
     </div>
   );
 };
