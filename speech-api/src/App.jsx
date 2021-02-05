@@ -1,7 +1,9 @@
+import Reader from './components/Reader';
+
 const App = () => {
   return (
     <div>
-      app
+      <Reader/>
     </div>
   );
 };
